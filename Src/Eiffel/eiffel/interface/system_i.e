@@ -3248,10 +3248,6 @@ feature -- Final mode generation
 						set_dead_code ({CONF_TARGET_OPTION}.dead_code_index_none)
 					end
 
-					if not exception_stack_managed then
-						exception_stack_managed := keep_assertions
-					end
-
 						-- Inlining is disabled when dead code removal is off or when checking
 						-- for catcalls.
 					inlining_on :=
